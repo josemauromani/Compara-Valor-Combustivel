@@ -23,9 +23,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val mLocale = Locale("pt", "BR")
-        valor_etanol.addTextChangedListener(MoneyTextWatcher(mEditTextValorParc, mLocale))
-
         botao_calcular.setOnClickListener{
 
             if (valor_etanol.text.isBlank() || valor_gasolina.text.isBlank()) {
